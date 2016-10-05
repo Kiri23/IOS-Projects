@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rpgoop/Player.swift"
+            timestampString = "486062063.532147"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "Player"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rpgoop.Player.(_inventory in _39E73CEEB08512CCC5EF65486F00CB31).getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "rpgoop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Christiannogueras/Documents/Xcodeworkspace/rpgoop/rpgoop/Player.swift"
+                  timestampString = "486061890.810799"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rpgoop.Player.(_inventory in _39E73CEEB08512CCC5EF65486F00CB31).setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "rpgoop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Christiannogueras/Documents/Xcodeworkspace/rpgoop/rpgoop/Player.swift"
+                  timestampString = "486061890.920349"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rpgoop.Player.init (startingHp : Swift.Int, attackPwr : Swift.Int) -&gt; rpgoop.Player"
+                  moduleName = "rpgoop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Christiannogueras/Documents/Xcodeworkspace/rpgoop/rpgoop/Player.swift"
+                  timestampString = "486061890.920579"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "81">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayouts_Advanced_part2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rocket 2" translatesAutoresizingMaskIntoConstraints="NO" id="hqw-aH-J7s">
+                                <rect key="frame" x="151" y="333" width="299" height="208"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8f-CG-wvq">
+                                <rect key="frame" x="307" y="131" width="276" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.94136124379742214" blue="0.30334818114390194" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="OM1-P1-mD1"/>
+                                </constraints>
+                                <color key="tintColor" red="0.62931561570000005" green="1" blue="0.93726148490000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveRocket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GP5-Io-ihi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwR-sr-Voj">
+                                <rect key="frame" x="20" y="131" width="266" height="128"/>
+                                <color key="backgroundColor" red="0.49552998259999997" green="0.81082303580000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="RCX-bq-WSC"/>
+                                </constraints>
+                                <color key="tintColor" red="0.62931561570000005" green="1" blue="0.93726148490000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="StopRocket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qu5-oO-Wna"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Ug-aH-meX">
+                                <rect key="frame" x="20" y="28" width="564" height="75"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OPt-4Z-y38">
+                                        <rect key="frame" x="143" y="8" width="292" height="31"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkm-Io-yD1">
+                                        <rect key="frame" x="250" y="46" width="79" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.061695397249999999" blue="0.1465738956" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="2wF-Ri-ikp"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dkm-Io-yD1" secondAttribute="bottom" constant="3" id="7yQ-se-Kod"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dkm-Io-yD1" secondAttribute="bottom" constant="3" id="9a3-Do-IUc"/>
+                                    <constraint firstItem="Dkm-Io-yD1" firstAttribute="centerX" secondItem="8Ug-aH-meX" secondAttribute="centerX" id="VO8-m5-Xcm"/>
+                                    <constraint firstItem="Dkm-Io-yD1" firstAttribute="top" secondItem="8Ug-aH-meX" secondAttribute="top" constant="38" id="eAj-zO-Klc"/>
+                                    <constraint firstAttribute="bottom" secondItem="OPt-4Z-y38" secondAttribute="bottom" constant="25" id="o3r-gz-0un"/>
+                                    <constraint firstItem="OPt-4Z-y38" firstAttribute="top" secondItem="8Ug-aH-meX" secondAttribute="top" constant="5" id="ra9-vI-t1k"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dkm-Io-yD1" secondAttribute="bottom" constant="3" id="wWT-DL-cCC"/>
+                                    <constraint firstItem="OPt-4Z-y38" firstAttribute="centerX" secondItem="8Ug-aH-meX" secondAttribute="centerX" id="wbL-Aj-Ume"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Ug-aH-meX" firstAttribute="width" secondItem="c8f-CG-wvq" secondAttribute="width" multiplier="2" constant="8" id="042-AV-4y3"/>
+                            <constraint firstItem="8Ug-aH-meX" firstAttribute="width" secondItem="xwR-sr-Voj" secondAttribute="width" multiplier="2" constant="8" id="1DB-VW-wrq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hqw-aH-J7s" secondAttribute="bottom" constant="59" id="5od-ju-WHt"/>
+                            <constraint firstItem="xwR-sr-Voj" firstAttribute="top" secondItem="8Ug-aH-meX" secondAttribute="bottom" constant="8" id="FXb-Wo-6oR"/>
+                            <constraint firstItem="xwR-sr-Voj" firstAttribute="leading" secondItem="8Ug-aH-meX" secondAttribute="leading" id="GUl-fa-aMt"/>
+                            <constraint firstItem="hqw-aH-J7s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="Jlf-n3-1yr"/>
+                            <constraint firstItem="hqw-aH-J7s" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="fuZ-sq-zPU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Ug-aH-meX" secondAttribute="trailing" id="ghE-qL-1Tm"/>
+                            <constraint firstItem="c8f-CG-wvq" firstAttribute="trailing" secondItem="8Ug-aH-meX" secondAttribute="trailing" id="hWs-pw-989"/>
+                            <constraint firstItem="c8f-CG-wvq" firstAttribute="top" secondItem="8Ug-aH-meX" secondAttribute="bottom" constant="8" id="hld-Fs-sMa"/>
+                            <constraint firstItem="8Ug-aH-meX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mEz-lU-aDi"/>
+                            <constraint firstItem="8Ug-aH-meX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="wdn-zI-YPz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rocketImage" destination="hqw-aH-J7s" id="FLC-rF-ymc"/>
+                        <outlet property="speedSlider" destination="OPt-4Z-y38" id="ejU-yw-v16"/>
+                        <outlet property="startButton" destination="c8f-CG-wvq" id="b6u-Hg-oHE"/>
+                        <outlet property="stopButton" destination="xwR-sr-Voj" id="dJS-UN-2Lx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rocket 2" width="417" height="280"/>
+    </resources>
+</document>
